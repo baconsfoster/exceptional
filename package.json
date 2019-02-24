@@ -1,0 +1,27 @@
+{
+  "name": "@egb/exceptional",
+  "version": "1.0.0",
+  "description": "Abstract Error class designed for extension as custom errors (supports instanceof & accurate stacktrace)",
+  "main": "lib/abstract-error.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baconsfoster/exceptional.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --require ts-node/register **/*.spec.ts"
+  },
+  "author": "Edward Pfremmer <epfremmer@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.9.4",
+    "mocha": "^6.0.0",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  }
+}
