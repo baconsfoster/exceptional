@@ -44,7 +44,7 @@ abstract class AbstractError extends Error {
   private captureStackTrace() {
     const stacktrace = new Error().stack || '';
     const frames = stacktrace.split('\n');
-    const slicePosition = frames.findIndex(frame => frame.startsWith(`    at new ${this.name}`));
+    const slicePosition = frames.findIndex(frame => frame.trim().startsWith(`at new ${this.name}`));
     const realStacktrace = frames.slice(slicePosition + 1).join('\n');
 
     return `${this.toString()}\n${realStacktrace}`;
