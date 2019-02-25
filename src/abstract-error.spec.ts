@@ -41,7 +41,7 @@ describe('AbstractError', () => {
   it('should return the correct stack trace', () => {
     const error = new CustomError('error message');
     const expected = `CustomError: error message
-    at Context.it (${baseDir}/src/abstract-error.spec.ts:42:19)
+    at Context.${'<anonymous>'} (${baseDir}/src/abstract-error.spec.ts:42:19)
     at callFn (${baseDir}/node_modules/mocha/lib/runnable.js:387:21)
     at Test.Runnable.run (${baseDir}/node_modules/mocha/lib/runnable.js:379:7)
     at Runner.runTest (${baseDir}/node_modules/mocha/lib/runner.js:525:10)
