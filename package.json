@@ -1,5 +1,5 @@
 {
-  "name": "@egb/exceptional",
+  "name": "@baconsfoster/exceptional",
   "version": "1.0.0",
   "description": "Abstract Error class designed for extension as custom errors (supports instanceof & accurate stacktrace)",
   "main": "lib/abstract-error.js",
